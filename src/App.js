@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header';
+import Meme from './Components/Meme';
+import "./index.css"
+import Tenary from './Components/Tenary';
+import Toggle from './Components/toggle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <><div className="App">
+      <Header />
+      <Meme />
+
+    </div><Tenary />
+    <Toggle /></>
+  )
 }
 
 export default App;
